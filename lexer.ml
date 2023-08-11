@@ -1,7 +1,5 @@
 open TokenTypes
 
-(* PASTE YOUR LEXER FROM P4A HERE *)
-
 let tokenize input = let re_bool = Str.regexp "\\(true\\|false\\)$" in let re_int = Str.regexp "[0-9]+\\|\\((-[0-9]+)\\)" in let re_string = Str.regexp "\"[^\"]*\"" in let re_id = Str.regexp "[a-zA-Z][a-zA-Z0-9]*" in
 let re_lparen = Str.regexp "(" in let re_rparen = Str.regexp ")" in let re_equal = Str.regexp "=" in let re_notequal = Str.regexp "<>" in let re_greater = Str.regexp ">" in let re_less = Str.regexp "<" in
 let re_greaterequal = Str.regexp ">=" in let re_lessequal = Str.regexp "<=" in let re_or = Str.regexp "||" in let re_and = Str.regexp "&&" in let re_not = Str.regexp "not$" in let re_if = Str.regexp "if$" in
